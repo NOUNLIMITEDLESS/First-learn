@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+ <style>
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+}
+
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+}
+
+a
+{
+  position: relative;
+  display: inline-block;
+  color: #0ef;
+  font-size: 1.5em;
+  letter-spacing: .1em;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  font-weight: 500;
+  transition: color 1s, box-shadow 0s;
+}
+:hover
+{
+  color: #fff;
+  box-shadow: 
+  0 0 10px #0ef,
+  0 0 20px #0ef,
+  0 0 60px #0ef,
+  0 0 80px #0ef,
+  0 0 160px #0ef;
+}
+a::before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background: #0ef;
+  z-index: -1;
+  transition: 0.5s;
+  transform: translateX(-50%) scale(0) rotate(360deg);
+}
+a:hover::before
+{
+  width: 100%;
+  transform: translateX(-50%) scale(1);
+}
+ </style>
+</head>
+<body>
+  <a href="#">button</a>
+</body>
+</html>

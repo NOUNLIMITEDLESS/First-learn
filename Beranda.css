@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+}
+
+.content1 {
+  padding: 10px;
+  background-color: #0e3742;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.content1 > ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.content1 > ul > li {
+  list-style-type: none;
+  
+  background: #03bcf4;
+  padding: 7px;
+  border-radius: 5px;
+  margin: 0 15px;
+}
+
+.content1 > ul > li > a {
+  text-decoration: none;
+  color: white;
+  font-weight: 1000;
+  
+}
+
+img {
+  padding-top: 2rem;
+}
+
+main {
+  padding-top: 5rem;
+  min-height: 10px;
+}
+
+.content {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.content > h2 {
+  position: relative;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: white;
+  text-transform: uppercase;
+  width:100%;
+  margin-bottom: 30px;
+  text-align: center;
+  outline: 2px;
+}
+
+.content > a {
+  color: aqua;
+  margin-top: 30px;
+}
+.content > a {
+  position: relative;
+  display: inline-block;
+  color: white;
+  font-size: 1.5em;
+  letter-spacing: .1em;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  margin-top: 5rem;
+  font-weight: 500;
+  transition: color 1s, box-shadow 0s;
+}
+.content > a:hover
+{
+  color: #fff;
+  box-shadow: 
+  0 0 10px #0ef,
+  0 0 20px #0ef,
+  0 0 60px #0ef,
+  0 0 80px #0ef,
+  0 0 160px #0ef;
+}
+.content > a:before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background: #0ef;
+  z-index: -1;
+  transition: 1s;
+  transform: translateX(-50%) scale(0) rotate(360deg);
+}
+.content > a:hover::before
+{
+  width: 100%;
+  transform: translateX(-50%) scale(1);
+}
+
+
+.content > div {
+  margin-top: 10px;
+}
+
+
+.content > div > a {
+  position: relative;
+  display: inline-block;
+  color: white;
+  font-size: 1.5em;
+  letter-spacing: .1em;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  margin-top: 5rem;
+  font-weight: 500;
+  transition: color 1s, box-shadow 0s;
+}
+.content > div > a:hover
+{
+  color: #fff;
+  box-shadow: 
+  0 0 10px #0ef,
+  0 0 20px #0ef,
+  0 0 60px #0ef,
+  0 0 80px #0ef,
+  0 0 100px #0ef;
+}
+.content > div > a:before
+{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background: #0ef;
+  z-index: -1;
+  transition: 0.5s;
+  transform: translatex(-50%) scale(0) rotate(360deg);
+}
+.content > div > a:hover::before
+{
+  width: 100%;
+  transform: translatex(-50%) scale(1) rotate(360deg);
+}
+
+p {
+  color: silver;
+  font-weight: 1000;
+}
+footer {
+  margin-top: 52rem;
+  padding: 20px 0px;
+  text-align: center;
+  color: white;
+  background: gold;
+}
